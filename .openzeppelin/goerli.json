@@ -1,0 +1,239 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xCe74845a416C1eA9a96cFaF25224CdB9C5343aED",
+    "txHash": "0x2f5317f26af6b877ea8997ce531a454591510080a264db6adc904ef738100bb5"
+  },
+  "proxies": [
+    {
+      "address": "0xde54cba256eD1a0F1A7cb1D6A7fa1A7f7ee745E6",
+      "txHash": "0x9428350ed0d213394092465c38582c153505bf9f2aa5b52794c260610813c93e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x99BCeD7308035b9A8e220D7E50245F92083Fb5B2",
+      "txHash": "0xdfa436c2a605cf92e7551870bb85bc4a339ec81ec4c73e89ac776eff0e3dd797",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9a504709d8A1E8a6D78bCE1665f99535aE8541eb",
+      "txHash": "0xa74ec52dc7ef2f59cd7e59b871f94c6174f886bc0b5ea98153321c5044880fc8",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x793E6704a2c41639603ACF111C37cAD3D576563a",
+      "txHash": "0xa684a6e39515618147281366a0ea462c4c412a37927107447ad106a53e1f679c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4cD95C7dBf73aC8f6B758D5e9531910c7bdBa9D2",
+      "txHash": "0x90c147fd2680c2c3690ce4a2d07a220825c33eae0db306ef51d1e9e262a62cf9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x28Dd2cf70328E2a4cdd699B2e605B2233eD13D5b",
+      "txHash": "0x82f8c4ab5bb3ffada61e35298661024db03e2938a3bc9d8f67a89f603eedefe7",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "750839b83bd308704e96aa0b72278790a143badc64899d3c3819fd095c5dcfee": {
+      "address": "0x87301B54714D81b9066C6822aB04285eCCd2cCd5",
+      "txHash": "0x624c5a57ae2ecb39b31f837902c9a62749c75b915627191db80b5aa8c9d66627",
+      "layout": {
+        "solcVersion": "0.8.2",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "GoldSaleV1",
+            "label": "goldToken",
+            "type": "t_address",
+            "src": "../project:/contracts/Mock/GoldSaleV1.sol:13"
+          },
+          {
+            "contract": "GoldSaleV1",
+            "label": "goldEscrow",
+            "type": "t_address",
+            "src": "../project:/contracts/Mock/GoldSaleV1.sol:14"
+          },
+          {
+            "contract": "GoldSaleV1",
+            "label": "etherPricePerToken",
+            "type": "t_uint256",
+            "src": "../project:/contracts/Mock/GoldSaleV1.sol:15"
+          },
+          {
+            "contract": "GoldSaleV1",
+            "label": "maxTokenPerPurchase",
+            "type": "t_uint256",
+            "src": "../project:/contracts/Mock/GoldSaleV1.sol:16"
+          },
+          {
+            "contract": "GoldSaleV1",
+            "label": "maxTokenPerAddress",
+            "type": "t_uint256",
+            "src": "../project:/contracts/Mock/GoldSaleV1.sol:17"
+          },
+          {
+            "contract": "GoldSaleV1",
+            "label": "purchasedAmountByAddress",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/Mock/GoldSaleV1.sol:18"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "d3bde4b7c7a87739b07cb8e8fe803296d0ee5f99ea95d9e8518c37f33e0428da": {
+      "address": "0xCFEc12678950ea709c9A9fb1364023D462856BFE",
+      "txHash": "0xd7516e5e46e266a11199d14df1c21e035ae38210554029c92f4f0e27dd896386",
+      "layout": {
+        "solcVersion": "0.8.2",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "GoldSale",
+            "label": "goldToken",
+            "type": "t_address",
+            "src": "../project:/contracts/GoldSale.sol:13"
+          },
+          {
+            "contract": "GoldSale",
+            "label": "goldEscrow",
+            "type": "t_address",
+            "src": "../project:/contracts/GoldSale.sol:14"
+          },
+          {
+            "contract": "GoldSale",
+            "label": "etherPricePerToken",
+            "type": "t_uint256",
+            "src": "../project:/contracts/GoldSale.sol:15"
+          },
+          {
+            "contract": "GoldSale",
+            "label": "maxTokenPerPurchase",
+            "type": "t_uint256",
+            "src": "../project:/contracts/GoldSale.sol:16"
+          },
+          {
+            "contract": "GoldSale",
+            "label": "maxTokenPerAddress",
+            "type": "t_uint256",
+            "src": "../project:/contracts/GoldSale.sol:17"
+          },
+          {
+            "contract": "GoldSale",
+            "label": "purchasedAmountByAddress",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/GoldSale.sol:18"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "solidity-truffle-template",
+  "version": "1.0.0",
+  "description": "the truffle template for solidity project",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile --all",
+    "contract-size": "truffle run contract-size",
+    "test": "npx truffle test",
+    "linter": "./node_modules/.bin/solhint -f table ./contracts/**/*.sol -f table ./contracts/*.sol",
+    "prettier": "prettier --trailing-comma es5 --write **/*.js contracts/**/*.sol contracts/*.sol",
+    "contract-verify": "truffle run verify"
+  },
+  "pre-commit": [
+    "linter"
+  ],
+  "pre-push": [
+    "prettier",
+    "linter",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:quocle108/solidity-truffle-template.git"
+  },
+  "keywords": [
+    "template",
+    "truffle",
+    "solidity",
+    "openzeppelin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@openzeppelin/truffle-upgrades": "^1.8.0",
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "dotenv": "^16.0.3",
+    "eth-gas-reporter": "^0.2.25",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.4",
+    "prettier": "^2.1.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.24",
+    "solhint": "^3.3.7",
+    "truffle": "^5.1.58",
+    "truffle-assertions": "^0.9.2",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-plugin-verify": "^0.5.31"
+  }
+}

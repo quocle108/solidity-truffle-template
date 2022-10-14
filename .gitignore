@@ -1,0 +1,8 @@
+node_modules/*
+build/*
+yarn.lock
+coverage/*
+.openzeppelin/unknown-*.json
+.openzeppelin/.session
+.env
+*.DS_Store
